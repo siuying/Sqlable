@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
   s.module_map = "module.modulemap"
   s.module_name = 'Sqlable'
 
-  s.library   = "sqlite"
+  s.library   = "sqlite3"
   s.requires_arc = true
 end
