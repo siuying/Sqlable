@@ -13,9 +13,10 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = "9.0"
 
   s.source       = { :git => "https://github.com/ulrikdamm/Sqlable.git", :commit => "332a479" }
-  s.source_files  = "Sources"
-  s.public_header_files = "Supporting files/*.h"
+  s.source_files  = "Sources", "Supporting files/*.h"
+
   s.module_map = "module.modulemap"
+  s.module_name = 'Sqlable'
 
   s.library   = "sqlite"
   s.requires_arc = true
