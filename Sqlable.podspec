@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/ulrikdamm/Sqlable.git", :commit => "332a479" }
   s.source_files  = "Sources"
   s.public_header_files = "Supporting files/*.h"
+  s.module_map = "module.modulemap"
 
   s.library   = "sqlite"
   s.requires_arc = true
