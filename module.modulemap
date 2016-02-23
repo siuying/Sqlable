@@ -1,4 +1,4 @@
-framework module SQLite {
+framework module Sqlable {
     umbrella header "Sqlable.h"
     header "sqlite3.h"
 
