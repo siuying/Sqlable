@@ -1,0 +1,7 @@
+framework module SQLite {
+    umbrella header "Sqlable.h"
+    header "sqlite3.h"
+
+    export *
+    module * { export * }
+}
