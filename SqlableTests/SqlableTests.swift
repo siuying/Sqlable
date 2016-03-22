@@ -253,5 +253,19 @@ class SqliteDatabaseTests: XCTestCase {
 		
 		let count = try! User.count().filter(User.name == "Luz").run(db)
 		XCTAssert(count == 1)
-	}
+    }
+    
+    func testById() {
+        try! db.createTable(Group.self)
+        let group = Group(id: 0)
+        try! group.insert().run(db)
+        
+        if let _ = try! Group.byId(1).run(db) {
+            XCTFail("group should not be found")
+            
+        } else {
+            XCTAssert(true)
+            
+        }
+    }
 }
